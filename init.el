@@ -484,3 +484,6 @@
 (put 'downcase-region 'disabled nil)
 
 (load-file (concat user-emacs-directory "user.init.el"))
+
+;; Start the emacs server
+(server-start)
