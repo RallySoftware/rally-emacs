@@ -35,12 +35,12 @@ Use your arrow keys to select the file you want to open and hit enter.
 
 Congratulations!!! You are now editing your first file. The following keyboard shortcuts should get you started.
 
-* `C-x s`                Save the current file (buffer)
+* `C-x C-s`              Save the current file (buffer)
 * `C-x C-f`              Open another file (or create a new file)
 * `M-x nrepl-jack-in`    Start a clojure nrepl session
 * `C-x C-k`              Load the current file into the repl
 
-Note: `C-x` means hold the control key and press x. `M-x` means hold the meta key and press x. After you have mastered 
+Note: `C-x` means hold the control key and press x. `M-x` means hold the meta (alt/option) key and press x. After you have mastered 
 the above keyboard shortcuts, you can find more information below.
 
 * To launch the emacs tutorial press `C-h t`
@@ -60,7 +60,7 @@ the above keyboard shortcuts, you can find more information below.
 ## Emacs Packages
 The following packages are installed the very first time you start emacs.
 
-* [Paraedit] (http://emacswiki.org/emacs/PareditCheatsheet) - Helps keep your parens balanced.
+* [Paredit] (http://emacswiki.org/emacs/PareditCheatsheet) - Helps keep your parens balanced.
 * [nrepl] (https://github.com/kingtim/nrepl.el) - Evaluates clojure code within emacs
 * [ac-nrepl] (https://github.com/purcell/ac-nrepl) - Provides a function completion list
 * [clojure-mode] (https://github.com/technomancy/clojure-mode) - Clojure indentation and navigation
