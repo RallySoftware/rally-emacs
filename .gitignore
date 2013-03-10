@@ -7,3 +7,4 @@ elpa
 repl-port
 url/
 user.init.el
+.DS_Store
