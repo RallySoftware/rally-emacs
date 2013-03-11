@@ -53,12 +53,19 @@ Clojure Commands
 * `C-c ,`          Run tests
 * `C-c '`          View test failure messages
 * `C-c C-k`        Compile and load buffer
-* `C-c M-n`        Load namespace of active buffer into REPL
 * `C-x C-e`        Evaluate sexp
-* `C-c M-o`        Clear REPL buffer
 * `M-.`            Jump to definition
-* `M-p`            Back through REPL history
 * `M-/`            Auto-complete word
 * `q`              Dismiss a temporary buffer that has appeared
 * `C-c C-d C-d`    Show docs for function
 * `C-x C-i`        Fuzzy-find all symbols in buffer
+
+NRepl Commands
+==============
+* `M-x nrepl-jack-in` Starts the nrepl
+* `M-x nrepl`         Connects to an already running nrepl server
+* `C-c C-l`           Loads the file currently selected (or will prompt to load a file)
+* `C-c M-n`           Load namespace of active buffer into REPL
+* `C-c M-o`           Clears repl buffer leaving only prompt
+* `C-up C-down`       Move up or down history of previously executed functions
+* `M-p`               Back through REPL history
