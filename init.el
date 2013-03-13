@@ -185,8 +185,6 @@
 (set-default 'indent-tabs-mode nil)
 (set-default 'tab-width 4)
 
-(set-default 'truncate-lines t)
-
 ;; Configure various thingies.
 (setq inhibit-startup-message t
       shift-select-mode nil
