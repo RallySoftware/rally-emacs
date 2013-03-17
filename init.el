@@ -497,3 +497,6 @@
 (require 'server)
 (if (not (server-running-p))
   (server-start))
+
+;;Revert a file if the buffer is unmodified and it changes on disk
+(global-auto-revert-mode 1)
