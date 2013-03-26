@@ -49,7 +49,7 @@
 ;; Set up package archives
 (require 'package)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
-                                        ;(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;;(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
 ;; Function to install a list of packages
@@ -80,14 +80,14 @@
     haml-mode
     inf-ruby
     less-css-mode
-                                        ;rinari
+    ;;rinari
     coffee-mode
 
     clojure-mode
     clojure-test-mode
     align-cljlet
     paredit
-    ;nrepl
+    nrepl
 
     auto-complete
     ac-nrepl
@@ -111,9 +111,18 @@
 ;; Install packages
 (ensure-packages-are-installed my-packages)
 
-;;; Use nrepl from github
-(add-to-list 'load-path (expand-file-name "~/src/nrepl.el"))
-(require 'nrepl)
+;;; Clone (or symlink) repos into ~/.emacs.d/checkouts to use the bleeding edge
+;;; version. Useful for things like nrepl that move fast.
+(defun add-checkouts ()
+  (let ((checkouts-dir (expand-file-name (concat user-emacs-directory "checkouts"))))
+    (when (file-exists-p checkouts-dir)
+      (dolist (d (directory-files-and-attributes checkouts-dir))
+        (let ((dirname (car d))
+              (is-dir  (car (cdr d))))
+          (when (and is-dir (not (equal dirname ".")) (not (equal dirname "..")))
+            (add-to-list 'load-path (expand-file-name (concat user-emacs-directory "checkouts/" dirname)))))))))
+
+(add-checkouts)
 
 ;;; Autocomplete
 (require 'ac-nrepl)
