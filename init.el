@@ -431,6 +431,11 @@
 (global-set-key (kbd "C-x M-d") 'dired-r)
 (global-set-key (kbd "<f8>")    'toggle-truncate-lines)
 (global-set-key (kbd "C-x g")   'magit-status)
+(global-set-key (kbd "RET") 'newline-and-indent)
+
+;; Rebind C-<up> for killing backwards
+(global-unset-key (kbd "C-<up>"))
+(global-set-key (kbd "C-<up>") 'paredit-splice-sexp-killing-backward)
 
 ;; Window management - windmove to switch, windsize to resize
 (require 'windsize)
@@ -516,3 +521,5 @@
 
 ;;Revert a file if the buffer is unmodified and it changes on disk
 (global-auto-revert-mode 1)
+
+
