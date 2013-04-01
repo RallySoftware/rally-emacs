@@ -437,7 +437,15 @@
 (global-set-key (kbd "C-x M-d")   'dired-r)
 (global-set-key (kbd "<f8>")      'toggle-truncate-lines)
 (global-set-key (kbd "C-x g")     'magit-status)
-(global-set-key (kbd "RET")       'newline-and-indent)
+
+(defun smart-open-line ()
+    "Insert an empty line after the current line.
+     Position the cursor at its beginning, according to the current mode."
+    (interactive)
+    (move-end-of-line nil)
+    (newline-and-indent))
+
+(global-set-key (kbd "C-o") 'smart-open-line)
 
 ;; Set up paredit keybindings that work in terminal
 (eval-after-load 'paredit
@@ -494,9 +502,8 @@
 ;; Help should search more than just commands
 (global-set-key (kbd "C-h a") 'apropos)
 
-;; I use this a lot
+;; Join the previous line
 (global-set-key (kbd "C-x j") 'join-line)
-
 
 (defun maybe-quit ()
   (interactive)
@@ -525,6 +532,9 @@
 
 ;;Revert a file if the buffer is unmodified and it changes on disk
 (global-auto-revert-mode 1)
+
+;;Indent after hitting return
+(electric-indent-mode 1)
 
 
 ;;; Load user-init.
