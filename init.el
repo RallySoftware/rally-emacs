@@ -106,6 +106,7 @@
     magit
 
     yasnippet-bundle
+    multiple-cursors
     ))
 
 ;; Install packages
