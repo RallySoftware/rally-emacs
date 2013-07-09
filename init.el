@@ -27,6 +27,7 @@
 (load "rally/dired")
 (load "rally/window")
 (load "rally/server")
+(load "rally/refactor")
 
 ;; vendor is in rally/defuns.el. Will automatically load rally/<vendor-name>.el
 (vendor 'idle-highlight-mode)
