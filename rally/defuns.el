@@ -5,7 +5,8 @@
   (unless (or (member package package-activated-list)
               (functionp package))
     (message "Installing %s" (symbol-name package))
-    (package-install package)))
+    (package-install package))
+  t)
 
 ;; For loading libraries from the vendor directory
 ;; Modified from defunkt's original version to support autoloading.

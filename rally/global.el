@@ -54,9 +54,6 @@
       backup-directory-alist `(("." . ,(expand-file-name "~/.emacs.d/backups")))
       )
 
-(defun turn-on-idle-hilight ()
-  (idle-highlight-mode t))
-
 (defun save-buffer-when-modified ()
   (when (buffer-modified-p) (save-buffer)))
 

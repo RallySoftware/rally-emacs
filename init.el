@@ -9,25 +9,10 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
 
+;; These three loads need to come before the vendor list below
 (load "rally/package")
 (load "rally/defuns")
 (load "rally/global")
-(load "rally/mac")
-(load "rally/bindings")
-(load "rally/zsh")
-(load "rally/uniquify")
-(load "rally/ido")
-(load "rally/ruby")
-(load "rally/mustache")
-(load "rally/prog-mode")
-(load "rally/hippie-expand")
-(load "rally/grep")
-(load "rally/ibuffer")
-(load "rally/faces")
-(load "rally/dired")
-(load "rally/window")
-(load "rally/server")
-(load "rally/refactor")
 
 ;; vendor is in rally/defuns.el. Will automatically load rally/<vendor-name>.el
 (vendor 'idle-highlight-mode)
@@ -68,9 +53,27 @@
 (vendor 'ace-jump-mode)
 (vendor 'puppet-mode)
 (vendor 'yaml-mode)
+(vendor 'clojure-refactoring-mode)
+
+(load "rally/mac")
+(load "rally/bindings")
+(load "rally/zsh")
+(load "rally/uniquify")
+(load "rally/ido")
+(load "rally/ruby")
+(load "rally/mustache")
+(load "rally/prog-mode")
+(load "rally/hippie-expand")
+(load "rally/grep")
+(load "rally/ibuffer")
+(load "rally/faces")
+(load "rally/dired")
+(load "rally/window")
+(load "rally/server")
+
 
 ;;; Load user-init.
 ;;; NOTE: Keep this last, so that the user-init can override stuff that was set in this file.
-(let ((user-init (concat user-emacs-directory "user.init.el")))
-  (when (file-exists-p user-init)
-    (load-file user-init)))
+;; (let ((user-init (concat user-emacs-directory "user.init.el")))
+;;   (when (file-exists-p user-init)
+;;     (load-file user-init)))

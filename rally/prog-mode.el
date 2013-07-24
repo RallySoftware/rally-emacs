@@ -28,26 +28,9 @@
 ;; file that contains code (i.e. not plain text)
 (defun my-prog-mode-hook ()
   ;; Idle highlight mode - can't live without it.
-  (turn-on-idle-hilight)
+  (idle-highlight-mode t)
 
   (set (make-local-variable 'comment-auto-fill-only-comments) t)
   (auto-fill-mode t))
 
 (add-hook 'prog-mode-hook 'my-prog-mode-hook)
-
-(defun turn-on-paredit ()
-  (paredit-mode t))
-
-(defun esk-paredit-nonlisp ()
-  "Turn on paredit mode for non-lisps."
-  (interactive)
-  (set (make-local-variable 'paredit-space-for-delimiter-predicates)
-       '((lambda (endp delimiter) nil)))
-  (paredit-mode 1))
-
-(add-hook 'emacs-lisp-mode-hook 'turn-on-paredit)
-(add-hook 'clojure-mode-hook    'turn-on-paredit)
-
-(add-hook 'ruby-mode-hook       'esk-paredit-nonlisp)
-(add-hook 'espresso-mode-hook   'esk-paredit-nonlisp)
-(add-hook 'js-mode-hook         'esk-paredit-nonlisp)
