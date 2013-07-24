@@ -71,8 +71,6 @@
   (when buffer-file-name (save-buffer-when-modified)))
 (defadvice windmove-right (before other-window-now activate)
   (when buffer-file-name (save-buffer-when-modified)))
-(defadvice save-buffer (after nrepl-reload-saved-file activate)
-  (when (buffer-modified-p) (nrepl-auto-reload)))
 
 ;; Activate occur easily inside isearch
 (define-key isearch-mode-map (kbd "C-o")

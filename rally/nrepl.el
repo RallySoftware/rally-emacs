@@ -6,3 +6,7 @@
   (when (and (member "nrepl-interaction-mode" (get-active-modes))
              (not (string/ends-with (buffer-name) "project.clj")))
     (nrepl-load-current-buffer)))
+
+(defadvice save-buffer (after nrepl-reload-saved-file activate)
+  (nrepl-auto-reload))
+

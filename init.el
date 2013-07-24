@@ -46,7 +46,7 @@
 (vendor 'color-theme)
 (vendor 'color-theme-solarized)
 (vendor 'zenburn-theme)
-(vendor 'magit 'magit-status)
+(vendor 'magit)
 (vendor 'yasnippet-bundle)
 (vendor 'multiple-cursors 'mc/edit-lines 'mc/mark-next-like-this 'mc/mark-previous-like-this 'mc/mark-all-like-this 'set-rectangular-region-anchor)
 (vendor 'key-chord)
@@ -74,6 +74,6 @@
 
 ;;; Load user-init.
 ;;; NOTE: Keep this last, so that the user-init can override stuff that was set in this file.
-;; (let ((user-init (concat user-emacs-directory "user.init.el")))
-;;   (when (file-exists-p user-init)
-;;     (load-file user-init)))
+(let ((user-init (concat user-emacs-directory "user.init.el")))
+  (when (file-exists-p user-init)
+    (load-file user-init)))
