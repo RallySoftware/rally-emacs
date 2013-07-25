@@ -44,8 +44,6 @@
 (vendor 'ack-and-a-half 'ack-and-a-half 'ack-and-a-half-same 'ack-and-a-half-find-file 'ack-and-a-half-find-file-same 'ack-and-a-half-interactive)
 (vendor 'smex)
 (vendor 'color-theme)
-(vendor 'color-theme-solarized)
-(vendor 'zenburn-theme)
 (vendor 'magit)
 (vendor 'yasnippet-bundle)
 (vendor 'multiple-cursors 'mc/edit-lines 'mc/mark-next-like-this 'mc/mark-previous-like-this 'mc/mark-all-like-this 'set-rectangular-region-anchor)
@@ -70,7 +68,6 @@
 (load "rally/dired")
 (load "rally/window")
 (load "rally/server")
-
 
 ;;; Load user-init.
 ;;; NOTE: Keep this last, so that the user-init can override stuff that was set in this file.
