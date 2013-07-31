@@ -52,6 +52,7 @@
 (vendor 'puppet-mode)
 (vendor 'yaml-mode)
 (vendor 'clojure-refactoring-mode)
+(vendor 'smooth-scrolling)
 
 (load "rally/mac")
 (load "rally/bindings")
