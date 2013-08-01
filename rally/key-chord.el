@@ -14,4 +14,6 @@
 
 (defun jakify ()
   (interactive)
-  (key-chord-mode +1))
+  (key-chord-mode +1)
+  (color-theme-cyberpunk)
+  (global-rainbow-delimiters-mode))

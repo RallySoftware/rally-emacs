@@ -8,6 +8,12 @@
 (autoload 'color-theme-twilight "color-theme-twilight" nil t)
 (autoload 'color-theme-yellow-on-blue "yellow-on-blue-theme" nil t)
 (autoload 'color-theme-blackboard "blackboard" nil t)
+(autoload 'color-theme-cyberpunk "cyberpunk" nil t)
 
 ;; Default to a theme that looks reasonably nice in 256-color
 (color-theme-twilight)
+
+(defun grover ()
+  (interactive)
+  (color-theme-cyberpunk)
+  (global-rainbow-delimiters-mode))
