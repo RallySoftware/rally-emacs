@@ -53,6 +53,7 @@
 (vendor 'yaml-mode)
 (vendor 'clojure-refactoring-mode)
 (vendor 'smooth-scrolling)
+(vendor 'rainbow-delimiters)
 
 (load "rally/mac")
 (load "rally/bindings")

@@ -14,4 +14,4 @@ user.init.el
 custom.el
 nrepl-history
 places
-
+projectile-bookmarks.eld
