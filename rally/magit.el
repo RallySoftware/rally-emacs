@@ -32,3 +32,6 @@
   (magit-refresh))
 
 (define-key magit-status-mode-map (kbd "W") 'magit-toggle-whitespace)
+
+(require 'ediff)
+(setq ediff-split-window-function 'split-window-horizontally)
