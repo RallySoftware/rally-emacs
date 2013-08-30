@@ -22,6 +22,7 @@
          (personal (concat "~/.emacs.d/rally/" file))
          (found nil))
     (cond
+     ((file-directory-p (concat normal "/lisp")) (add-to-list 'load-path (concat normal "/lisp")) (set 'found t))
      ((file-directory-p normal) (add-to-list 'load-path normal) (set 'found t))
      ((file-directory-p suffix) (add-to-list 'load-path suffix) (set 'found t))
      ((file-exists-p suffix)  (set 'found t))

@@ -1,0 +1,6 @@
+[submodule "vendor/epresent"]
+	path = vendor/epresent
+	url = https://github.com/eschulte/epresent
+[submodule "vendor/gitutils"]
+	path = vendor/gitutils
+	url = https://github.com/chaitanyagupta/gitutils.git

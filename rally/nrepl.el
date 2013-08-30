@@ -1,6 +1,7 @@
 (add-hook 'nrepl-mode-hook
           '(lambda ()
-             (define-key clojure-mode-map (kbd "C-c z") 'nrepl-switch-to-repl-buffer)))
+             (define-key clojure-mode-map (kbd "C-c z") 'nrepl-switch-to-repl-buffer)
+             (paredit-mode)))
 
 (defun nrepl-auto-reload ()
   (when (and (member "nrepl-interaction-mode" (get-active-modes))

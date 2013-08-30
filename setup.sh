@@ -8,3 +8,8 @@ if [ ! -f `pwd`/user.init.el ];
 then
     cp `pwd`/pristine/user.init.el.default `pwd`/user.init.el
 fi
+
+git submodule init
+git submodule update
+
+vendor/gitutils/submodule-hooks/install.sh `pwd`
