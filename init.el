@@ -61,6 +61,8 @@
 (load-library "rally/org.el")
 
 (vendor 'epresent)
+(vendor 'window-numbering)
+(vendor 'hideshow-org)
 
 (load "rally/mac")
 (load "rally/bindings")
