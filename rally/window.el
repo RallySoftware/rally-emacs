@@ -2,3 +2,4 @@
 (global-unset-key (kbd "<select>"))
 (windmove-default-keybindings) ;; Shift+direction
 (global-set-key (kbd "<select>") 'windmove-up)
+(setq windmove-wrap-around t)
