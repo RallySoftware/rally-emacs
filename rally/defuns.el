@@ -16,6 +16,7 @@
 ;; - Load from <library>.el file in vendor/
 ;; - Load from installed package
 (defun vendor (library &rest autoload-functions)
+  (interactive "SLibrary: ")
   (let* ((file (symbol-name library))
          (normal (concat "~/.emacs.d/vendor/" file))
          (suffix (concat normal ".el"))
