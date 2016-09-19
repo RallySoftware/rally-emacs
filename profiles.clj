@@ -8,7 +8,8 @@
  
  :repl
  {:plugins      [[cider/cider-nrepl "0.13.0-SNAPSHOT"]
-                 [refactor-nrepl "2.3.0-SNAPSHOT"]]
+                 [refactor-nrepl "2.3.0-SNAPSHOT"]
+                 [rally-service/lein-template "1.0.0"]]
   :dependencies [[org.clojars.gjahad/debug-repl "0.3.3"]
                  [org.clojure/tools.namespace "0.2.11"]
                  [org.clojure/tools.nrepl "0.2.12"]
