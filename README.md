@@ -72,8 +72,8 @@ Note: `C-x` means hold the control key and press x. `M-x` means hold the meta (a
 the above keyboard shortcuts, you can find more information below.
 
 * To launch the emacs tutorial press `C-h t`
-* [Clojure with Emacs tutorial] (http://clojure-doc.org/articles/tutorials/emacs.html)
-* [Hotkeys] (docs/hotkeys.md)
+* [Clojure with Emacs tutorial](http://clojure-doc.org/articles/tutorials/emacs.html)
+* [Hotkeys](docs/hotkeys.md)
 * [http://www.cs.rutgers.edu/LCSR-Computing/some-docs/emacs-chart.html](http://www.cs.rutgers.edu/LCSR-Computing/some-docs/emacs-chart.html)
 
 ## Remote Pairing
@@ -85,16 +85,16 @@ the above keyboard shortcuts, you can find more information below.
 4. anyone you want to pair with can ssh to your computer then type `tmux attach`
 5. to disconnect from the tmux session (but leave it running) type `C-b d`
 
-## But wait, I can't live without my forked version of <obscure .el package>!
+## But wait, I can't live without my forked version of \<obscure .el package\>!
 
 You can put your own `.emacs` or `.init.el` in `~/.emacs.d/user.init.el`. This file will be loaded at the end of the default init file.
 
 ## Emacs Packages
 The following packages are installed the very first time you start emacs.
 
-* [Paredit] (http://emacswiki.org/emacs/PareditCheatsheet) - Helps keep your parens balanced.
-* [nrepl] (https://github.com/kingtim/nrepl.el) - Evaluates clojure code within emacs
-* [ac-nrepl] (https://github.com/purcell/ac-nrepl) - Provides a function completion list
-* [clojure-mode] (https://github.com/technomancy/clojure-mode) - Clojure indentation and navigation
-* [find-file-in-project] (http://emacswiki.org/emacs/FindFileInProject) - Searches for files in a project
+* [Paredit](http://emacswiki.org/emacs/PareditCheatsheet) - Helps keep your parens balanced.
+* [nrepl](https://github.com/kingtim/nrepl.el) - Evaluates clojure code within emacs
+* [ac-nrepl](https://github.com/purcell/ac-nrepl) - Provides a function completion list
+* [clojure-mode](https://github.com/technomancy/clojure-mode) - Clojure indentation and navigation
+* [find-file-in-project](http://emacswiki.org/emacs/FindFileInProject) - Searches for files in a project
 * What other packages are being installed? What is their purpose? Link to their docs?
