@@ -47,7 +47,7 @@ If you have problems with this, and want to use the stable versions, here is wha
 > cd cider
 > git checkout v0.8.2
 > cd ../clj-refactor.el
-> git checout 1.0.5
+> git checkout 1.0.5
 ```
 
 ## OK, Now what? How do I use Emacs?
