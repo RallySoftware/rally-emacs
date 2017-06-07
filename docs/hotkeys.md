@@ -69,3 +69,4 @@ NRepl Commands
 * `C-c M-o`           Clears repl buffer leaving only prompt
 * `C-up C-down`       Move up or down history of previously executed functions
 * `M-p`               Back through REPL history
+* `C-c M-j`           Alternate start for nrepl
